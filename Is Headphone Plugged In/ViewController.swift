@@ -72,6 +72,8 @@ class ViewController: UIViewController {
     @objc func updateTimer() {
         let isOtherAudioPlaying = AVAudioSession.sharedInstance().isOtherAudioPlaying
         print(isOtherAudioPlaying)
+        let volumePlaying = AVAudioSession.sharedInstance().outputVolume
+        print(volumePlaying)
     }
     
     @objc dynamic fileprivate func audioRouteChangeListener(_ notification:Notification) {
@@ -99,5 +101,5 @@ class ViewController: UIViewController {
         
     }*/
 
-}
+    }
 

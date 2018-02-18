@@ -15,7 +15,7 @@
 		20DCCD3D1AD5DFC40068ABB3 /* Is_Headphone_Plugged_InTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCCD3C1AD5DFC40068ABB3 /* Is_Headphone_Plugged_InTests.swift */; };
 		20DCCD471AD5E67B0068ABB3 /* song_credits.txt in Resources */ = {isa = PBXBuildFile; fileRef = 20DCCD461AD5E67B0068ABB3 /* song_credits.txt */; };
 		20DCCD491AD5E6EC0068ABB3 /* song57_source_fish_openbsd.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20DCCD481AD5E6EC0068ABB3 /* song57_source_fish_openbsd.mp3 */; };
-		93C06C252039DFF50076EA6B /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C06C242039DFF50076EA6B /* Graph.swift */; };
+		762C8E6F203A0FB300506164 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762C8E6E203A0FB300506164 /* GraphView.swift */; };
 		93C06C272039FB1F0076EA6B /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C06C262039FB1F0076EA6B /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +42,7 @@
 		20DCCD3C1AD5DFC40068ABB3 /* Is_Headphone_Plugged_InTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Is_Headphone_Plugged_InTests.swift; sourceTree = "<group>"; };
 		20DCCD461AD5E67B0068ABB3 /* song_credits.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = song_credits.txt; sourceTree = "<group>"; };
 		20DCCD481AD5E6EC0068ABB3 /* song57_source_fish_openbsd.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song57_source_fish_openbsd.mp3; sourceTree = "<group>"; };
-		93C06C242039DFF50076EA6B /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		762C8E6E203A0FB300506164 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		93C06C262039FB1F0076EA6B /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,7 +67,7 @@
 		20DCCD181AD5DFC40068ABB3 = {
 			isa = PBXGroup;
 			children = (
-				93C06C242039DFF50076EA6B /* Graph.swift */,
+				762C8E6E203A0FB300506164 /* GraphView.swift */,
 				20DCCD231AD5DFC40068ABB3 /* Is Headphone Plugged In */,
 				20DCCD391AD5DFC40068ABB3 /* Is Headphone Plugged InTests */,
 				20DCCD221AD5DFC40068ABB3 /* Products */,
@@ -175,8 +175,9 @@
 				TargetAttributes = {
 					20DCCD201AD5DFC40068ABB3 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 7A7DV2Z77M;
+						DevelopmentTeam = T3T6KN799J;
 						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
 					};
 					20DCCD351AD5DFC40068ABB3 = {
 						CreatedOnToolsVersion = 6.2;
@@ -232,9 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93C06C252039DFF50076EA6B /* Graph.swift in Sources */,
 				20DCCD291AD5DFC40068ABB3 /* ViewController.swift in Sources */,
 				20DCCD271AD5DFC40068ABB3 /* AppDelegate.swift in Sources */,
+				762C8E6F203A0FB300506164 /* GraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,11 +359,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7A7DV2Z77M;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3T6KN799J;
 				INFOPLIST_FILE = "Is Headphone Plugged In/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.EllaWilli.Headphone-Plugged-In";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xuyangannie.Headphone-Plugged-In";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
@@ -372,11 +376,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7A7DV2Z77M;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3T6KN799J;
 				INFOPLIST_FILE = "Is Headphone Plugged In/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.EllaWilli.Headphone-Plugged-In";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xuyangannie.Headphone-Plugged-In";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
