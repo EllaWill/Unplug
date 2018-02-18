@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Is_Headphone_Plugged_In" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xj4-fa-GpN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Xj4-fa-GpN" secondAttribute="centerX" id="PlL-oH-FjA"/>
+                            <constraint firstItem="Xj4-fa-GpN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="jF7-ho-06X"/>
+                            <constraint firstItem="Xj4-fa-GpN" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="oK7-gX-qRs"/>
+                            <constraint firstAttribute="centerY" secondItem="Xj4-fa-GpN" secondAttribute="centerY" id="qMP-F6-Iaw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Xj4-fa-GpN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="PlL-oH-FjA"/>
+                                <exclude reference="jF7-ho-06X"/>
+                                <exclude reference="oK7-gX-qRs"/>
+                                <exclude reference="qMP-F6-Iaw"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Xj4-fa-GpN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="PlL-oH-FjA"/>
+                                <include reference="jF7-ho-06X"/>
+                                <include reference="oK7-gX-qRs"/>
+                                <include reference="qMP-F6-Iaw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="headphonePluggedInStateImageView" destination="Xj4-fa-GpN" id="YVv-Kb-QXt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
